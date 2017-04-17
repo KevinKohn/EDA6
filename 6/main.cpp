@@ -5,7 +5,8 @@
 #include "Display.hpp"
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_image.h>
-
+#include "Server.h"
+#include "client.h"
 
 
 using namespace std;
@@ -26,8 +27,15 @@ int main(int argc, char** argv) {
 /********************************************************
  * 
  * 
- * CONECTAR, RECIBIR PAQUETE Y TODA ESA MAGIA
- * 
+ * CONECTAR, RECIBIR PAQUETE Y TODA ESA MAGIA:     */
+
+//SERVER
+	TCPserver(); // escucha, conecta, manda mensaje
+
+//CLIENT
+	asioTcpClient(SERVER_IP); // conecta, recibe mensaje
+
+ /* 
  * 
  ********************************************************/	
 	
