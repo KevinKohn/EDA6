@@ -6,7 +6,7 @@ typedef char byte_t;
 class YouGo
 {
 public:
-	bool isMyTurn(byte_t ip[4]); // recibe clase ip
+	bool isMyTurn(byte_t pcID); // recibe clase ip
 	YouGo(byte_t _animacion, byte_t _maqOrder, int nMaqs);
 
 private:
